@@ -1,0 +1,115 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #111;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #000;
+    border-bottom: 2px solid red;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar li {
+    flex: 1;
+}
+
+.navbar a {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background-color: red;
+}
+
+/* Section & Container */
+.section {
+    display: none;
+    padding: 40px 20px;
+    min-height: 90vh;
+}
+
+.section.active {
+    display: block;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #1a1a1a;
+    padding: 30px;
+    border-left: 5px solid red;
+    border-radius: 5px;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid red;
+}
+
+/* Headings & Text */
+h1, h2 {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    padding-left: 20px;
+    list-style: disc;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-icons a {
+    color: red;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.social-icons a i {
+    margin-right: 8px;
+}
+
+.social-icons a:hover {
+    color: white;
+}

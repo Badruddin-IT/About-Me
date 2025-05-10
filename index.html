@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome untuk ikon Instagram & Discord -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('about')">About</a></li>
+            <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Halaman Home -->
+    <section id="home" class="section active">
+        <div class="container">
+            <h1>Selamat Datang!</h1>
+            <img src="https://cdn.discordapp.com/attachments/1348065502974447718/1370580378175410236/1739960426565.jpg?ex=682003f2&is=681eb272&hm=d6a2d97151482a426ef3e94b3475a0b10e7881ede2b6b408d27150534715ce3c&" alt="Foto Profil" class="profile-img">
+            <h2>About Me</h2>
+            <p>
+                Saya adalah pelajar dari SMP, saya bercita cita sebagai Programmer
+                Kecintaan saya pada teknologi dimulai sejak duduk di bangku sekolah menengah, dan sejak itu saya terus mengeksplorasi berbagai bahasa pemrograman dan framework modern.
+            </p>
+            <p>
+                Saya percaya bahwa setiap baris kode adalah bagian dari seni. Fokus saya adalah memberikan pengalaman pengguna yang luar biasa dengan tampilan visual yang menarik,
+                performa cepat, dan struktur kode yang bersih. Saya telah mengerjakan berbagai proyek pribadi dan freelance, mulai dari landing page sederhana hingga sistem informasi internal.
+            </p>
+            <p>
+                Selain ngoding, saya suka belajar hal baru, membaca buku pengembangan diri, dan mendengarkan musik untuk relaksasi. Saya percaya bahwa pembelajaran adalah proses seumur hidup,
+                dan saya selalu terbuka untuk peluang baru yang dapat menantang dan mengembangkan keterampilan saya lebih lanjut.
+            </p>
+        </div>
+    </section>
+
+    <!-- Halaman About -->
+    <section id="about" class="section">
+        <div class="container">
+            <h1>About Me</h1>
+            <ul>
+                <li>Nama: Badruddin</li>
+                <li>Profesi: Pelajar</li>
+                <li>Skill Yang Dipelajari: HTML & CSS</li>
+                <li>Hobi: Coding, Musik, Badminton</li>
+            </ul>
+        </div>
+    </section>
+
+<!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h1>Kontak Saya</h1>
+            <p>Youtube : -</p>
+            <p>Instagram: @solo_estudias</p>
+            <div class="social-icons">
+                <a href="https://discord.com/users/galaticgazelle" target="_blank"><i class="fab fa-discord"></i> Discord</a>
+            </div>
+    </section>
+
+    <script>
+        function showSection(id) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
